@@ -22,4 +22,12 @@ public class AuthorService {
     public Author create(Author author) {
         return authorRepository.save(author);
     }
+
+    public Author update(Integer id, Author updatedAuthor) {
+        return authorRepository.update(id, updatedAuthor);
+    }
+
+    public void delete(Integer id) {
+        authorRepository.delete(id);
+    }
 }
